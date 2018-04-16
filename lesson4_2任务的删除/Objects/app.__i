@@ -1,0 +1,6 @@
+-c --cpu Cortex-M3 --li -g -O0 --apcs=interwork -I.\sourse
+-I C:\Users\Administrator\Desktop\learn_tinyOS\lesson4_2ÈÎÎñµÄÉ¾³ý\RTE
+-I E:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include
+-I E:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\Device\ARM\ARMCM3\Include
+-D_RTE_ -DARMCM3
+-o .\objects\app.o --omf_browse .\objects\app.crf --depend .\objects\app.d "sourse\app.c"

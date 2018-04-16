@@ -1,0 +1,6 @@
+-c --cpu Cortex-M3 --li -g -O0 --apcs=interwork -I.\sourse
+-I C:\Users\Administrator\Desktop\learn_tinyOS\lesson4_3ÈÎÎñ×´Ì¬²éÑ¯\RTE
+-I E:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include
+-I E:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\Device\ARM\ARMCM3\Include
+-D_RTE_ -DARMCM3
+-o .\objects\bitmap.o --omf_browse .\objects\bitmap.crf --depend .\objects\bitmap.d "sourse\bitmap.c"

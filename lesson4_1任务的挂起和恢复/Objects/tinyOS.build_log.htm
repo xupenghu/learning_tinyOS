@@ -1,0 +1,212 @@
+<html>
+<body>
+<pre>
+<h1>�Vision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ��Vision V5.12.0.0
+Copyright (C) 2014 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 12 Administrator, 1, LIC=IC9MM-XJIK2-767QT-RESFN-JJCCN-2W6AU
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.12.0.0
+Toolchain Path:  E:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.05 (build 41)
+Assembler:       Armasm.exe V5.05 (build 41)
+Linker/Locator:  ArmLink.exe V5.05 (build 41)
+Library Manager: ArmAr.exe V5.05 (build 41)
+Hex Converter:   FromElf.exe V5.05 (build 41)
+CPU DLL:         SARMCM3.DLL V5.12.0.0
+Dialog DLL:      DCM.DLL V1.13.0.0
+Target DLL:      UL2CM3.DLL V1.153.0.0
+Dialog DLL:      TCM.DLL V1.14.2.0
+ 
+<h2>Project:</h2>
+C:\Users\Administrator\Desktop\learn_tinyOS\lesson4_1����Ĺ���ͻָ�\tinyOS.uvprojx
+Project File Date:  04/16/2018
+
+<h2>Output:</h2>
+*** Note: Rebuilding project, since 'Options->Output->Create Batch File' is selected.
+Rebuild target 'Target 1'
+compiling main.c...
+compiling switch.c...
+compiling bitmap.c...
+compiling list.c...
+compiling t_cpu.c...
+compiling t_task.c...
+compiling t_time.c...
+compiling app.c...
+assembling startup_ARMCM3.s...
+compiling system_ARMCM3.c...
+linking...
+Program Size: Code=2066 RO-data=482 RW-data=36 ZI-data=21132  
+FromELF: creating hex file...
+".\Objects\tinyOS.axf" - 0 Error(s), 0 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.4.2.0.pack
+                ARM::CMSIS:CORE:3.40.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 3.40.0
+   * Component: Startup Version: 1.0.1
+
+<h2>Collection of Component include folders:</h2>
+  C:\Users\Administrator\Desktop\learn_tinyOS\lesson4_1����Ĺ���ͻָ�\RTE
+  E:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include
+  E:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\Device\ARM\ARMCM3\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:3.40.0
+      Source file:   CMSIS\UserCodeTemplates\ARM\ITM_Retarget.c
+
+   * Component: ARM::Device:Startup:1.0.1
+      Include file:  Device\ARM\ARMCM3\Include\ARMCM3.h
+      Source file:   Device\ARM\ARMCM3\Source\ARM\startup_ARMCM3.s
+      Source file:   Device\ARM\ARMCM3\Source\system_ARMCM3.c
+</pre>
+</body>
+</html>
+  * Component: ARM::Device:Startup:1.0.1
+      Include file:  Device\ARM\ARMCM3\Include\ARMCM3.h
+      Source file:   Device\ARM\ARMCM3\Source\ARM\startup_ARMCM3.s
+      Source file:   Device\ARM\ARMCM3\Source\system_ARMCM3.c
+Target not created.
+compiling main.c...
+sourse\main.c(243): error:  #20: identifier "TINYOS_PRO_COUNT" is undefined
+        tTaskInit(&tIdleTask, idleTaskEntry, (void *)0, TINYOS_PRO_COUNT-1, &idleTaskEnv[1024]);
+sourse\main.c: 0 warnings, 1 error
+"sourse\main.c" - 1 Error(s), 0 Warning(s).
+compiling main.c...
+"sourse\main.c" - 0 Error(s), 0 Warning(s).
+e\t_task.c(32): error:  #20: identifier "TINYOS_SLICE_MAX" is undefined
+        task->slice = TINYOS_SLICE_MAX;
+sourse\t_task.c(41): error:  #20: identifier "taskTable" is undefined
+        tlist_add_last(&taskTable[prio], &task->link_node);             //将初始化好的任务装入tasktable�?                    ^
+sourse\t_task.c(43): error:  #20: identifier "task_prio_bitmap" is undefined
+        tbitmap_setbit(&task_prio_bitmap, prio); //将相应优先级的位图置1 使得任务处于就绪状�?                       ^
+sourse\t_task.c: 1 warning, 3 errors
+compiling t_time.c...
+sourse\tinyOS.h(64): warning:  #1295-D: Deprecated declaration SysTick_Handler - give arg types
+  void SysTick_Handler () ;
+sourse\t_time.c(8): warning:  #223-D: function "ttime_task_wait" declared implicitly
+        ttime_task_wait(currentTask, delay);
+sourse\t_time.c(9): warning:  #223-D: function "ttask_sched_unready" declared implicitly
+        ttask_sched_unready(currentTask);
+sourse\t_time.c(13): warning:  #223-D: function "tTaskSched" declared implicitly
+        tTaskSched();
+sourse\t_time.c: 4 warnings, 0 errors
+compiling app.c...
+sourse\tinyOS.h(64): warning:  #1295-D: Deprecated declaration SysTick_Handler - give arg types
+  void SysTick_Handler () ;
+sourse\app.c(36): warning:  #223-D: function "delay" declared implicitly
+                delay(100);
+sourse\app.c(48): warning:  #223-D: function "delay" declared implicitly
+                delay(100);
+sourse\app.c: 3 warnings, 0 errors
+assembling startup_ARMCM3.s...
+compiling system_ARMCM3.c...
+".\Objects\tinyOS.axf" - 10 Error(s), 13 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.4.2.0.pack
+                ARM::CMSIS:CORE:3.40.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 3.40.0
+   * Component: Startup Version: 1.0.1
+
+<h2>Collection of Component include folders:</h2>
+  C:\Users\Administrator\Desktop\learn_tinyOS\lesson4_1����Ĺ���ͻָ�\RTE
+  E:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include
+  E:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\Device\ARM\ARMCM3\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:3.40.0
+      Source file:   CMSIS\UserCodeTemplates\ARM\ITM_Retarget.c
+
+   * Component: ARM::Device:Startup:1.0.1
+      Include file:  Device\ARM\ARMCM3\Include\ARMCM3.h
+      Source file:   Device\ARM\ARMCM3\Source\ARM\startup_ARMCM3.s
+      Source file:   Device\ARM\ARMCM3\Source\system_ARMCM3.c
+Target not created.
+compiling t_cpu.c...
+sourse\t_cpu.c(33): warning:  #223-D: function "tTaskSystemTickHandler" declared implicitly
+      tTaskSystemTickHandler();
+sourse\t_cpu.c: 1 warning, 0 errors
+"sourse\t_cpu.c" - 0 Error(s), 1 Warning(s).
+compiling t_cpu.c...
+"sourse\t_cpu.c" - 0 Error(s), 0 Warning(s).
+compiling t_time.c...
+sourse\t_time.c(8): warning:  #223-D: function "ttime_task_wait" declared implicitly
+        ttime_task_wait(currentTask, delay);
+sourse\t_time.c(9): warning:  #223-D: function "ttask_sched_unready" declared implicitly
+        ttask_sched_unready(currentTask);
+sourse\t_time.c(13): warning:  #223-D: function "tTaskSched" declared implicitly
+        tTaskSched();
+sourse\t_time.c: 3 warnings, 0 errors
+"sourse\t_time.c" - 0 Error(s), 3 Warning(s).
+compiling main.c...
+sourse\main.c(213): warning:  #223-D: function "tTaskEnterCritical" declared implicitly
+      uint32_t status = tTaskEnterCritical();   
+sourse\main.c(221): warning:  #223-D: function "tTaskExitCritical" declared implicitly
+      tTaskExitCritical(status);  
+sourse\main.c(228): warning:  #223-D: function "tTaskEnterCritical" declared implicitly
+        uint32_t status = tTaskEnterCritical(); 
+sourse\main.c(233): warning:  #223-D: function "tTaskSched" declared implicitly
+                        tTaskSched ();
+sourse\main.c(236): warning:  #223-D: function "tTaskExitCritical" declared implicitly
+        tTaskExitCritical(status); 
+sourse\main.c(243): warning:  #223-D: function "ttask_delay_list_init" declared implicitly
+        ttask_delay_list_init();
+sourse\main.c: 6 warnings, 0 errors
+"sourse\main.c" - 0 Error(s), 6 Warning(s).
+compiling main.c...
+"sourse\main.c" - 0 Error(s), 0 Warning(s).
+compiling main.c...
+"sourse\main.c" - 0 Error(s), 0 Warning(s).
+compiling t_cpu.c...
+"sourse\t_cpu.c" - 0 Error(s), 0 Warning(s).
+compiling t_time.c...
+"sourse\t_time.c" - 0 Error(s), 0 Warning(s).
+compiling app.c...
+sourse\app.c(36): warning:  #223-D: function "delay" declared implicitly
+                delay(100);
+sourse\app.c(48): warning:  #223-D: function "delay" declared implicitly
+                delay(100);
+sourse\app.c: 2 warnings, 0 errors
+"sourse\app.c" - 0 Error(s), 2 Warning(s).
+compiling app.c...
+"sourse\app.c" - 0 Error(s), 0 Warning(s).
+compiling t_task.c...
+sourse\t_task.c(32): error:  #20: identifier "TINYOS_SLICE_MAX" is undefined
+        task->slice = TINYOS_SLICE_MAX;
+sourse\t_task.c(41): error:  #20: identifier "taskTable" is undefined
+        tlist_add_last(&taskTable[prio], &task->link_node);             //将初始化好的任务装入tasktable�?                    ^
+sourse\t_task.c(43): error:  #20: identifier "task_prio_bitmap" is undefined
+        tbitmap_setbit(&task_prio_bitmap, prio); //将相应优先级的位图置1 使得任务处于就绪状�?                       ^
+sourse\t_task.c: 0 warnings, 3 errors
+"sourse\t_task.c" - 3 Error(s), 0 Warning(s).
+compiling t_task.c...
+sourse\t_task.c(32): error:  #20: identifier "TINYOS_SLICE_MAX" is undefined
+        task->slice = TINYOS_SLICE_MAX;
+sourse\t_task.c(41): error:  #20: identifier "taskTable" is undefined
+        tlist_add_last(&taskTable[prio], &task->link_node);             //将初始化好的任务装入tasktable�?                    ^
+sourse\t_task.c(43): error:  #20: identifier "task_prio_bitmap" is undefined
+        tbitmap_setbit(&task_prio_bitmap, prio); //将相应优先级的位图置1 使得任务处于就绪状�?                       ^
+sourse\t_task.c: 0 warnings, 3 errors
+"sourse\t_task.c" - 3 Error(s), 0 Warning(s).
+compiling t_task.c...
+sourse\t_task.c(41): error:  #20: identifier "taskTable" is undefined
+        tlist_add_last(&taskTable[prio], &task->link_node);             //将初始化好的任务装入tasktable�?                    ^
+sourse\t_task.c(43): error:  #20: identifier "task_prio_bitmap" is undefined
+        tbitmap_setbit(&task_prio_bitmap, prio); //将相应优先级的位图置1 使得任务处于就绪状�?                       ^
+sourse\t_task.c: 0 warnings, 2 errors
+"sourse\t_task.c" - 2 Error(s), 0 Warning(s).
+compiling t_task.c...
+"sourse\t_task.c" - 0 Error(s), 0 Warning(s).
+compiling main.c...
+"sourse\main.c" - 0 Error(s), 0 Warning(s).
