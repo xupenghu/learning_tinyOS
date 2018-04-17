@@ -1,0 +1,218 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.12.0.0
+Copyright (C) 2014 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 12 Administrator, 1, LIC=IC9MM-XJIK2-767QT-RESFN-JJCCN-2W6AU
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.12.0.0
+Toolchain Path:  E:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.05 (build 41)
+Assembler:       Armasm.exe V5.05 (build 41)
+Linker/Locator:  ArmLink.exe V5.05 (build 41)
+Library Manager: ArmAr.exe V5.05 (build 41)
+Hex Converter:   FromElf.exe V5.05 (build 41)
+CPU DLL:         SARMCM3.DLL V5.12.0.0
+Dialog DLL:      DCM.DLL V1.13.0.0
+Target DLL:      UL2CM3.DLL V1.153.0.0
+Dialog DLL:      TCM.DLL V1.14.2.0
+ 
+<h2>Project:</h2>
+C:\Users\Administrator\Desktop\learning_tinyOS\learning_tinyOS\lesson5_2事件等待与通知\tinyOS.uvprojx
+Project File Date:  04/16/2018
+
+<h2>Output:</h2>
+*** Note: Rebuilding project, since 'Options->Output->Create Batch File' is selected.
+Rebuild target 'Target 1'
+compiling main.c...
+compiling switch.c...
+compiling bitmap.c...
+compiling list.c...
+compiling t_cpu.c...
+compiling t_task.c...
+compiling t_time.c...
+compiling app.c...
+compiling t_event.c...
+assembling startup_ARMCM3.s...
+compiling system_ARMCM3.c...
+linking...
+Program Size: Code=2770 RO-data=482 RW-data=40 ZI-data=25424  
+FromELF: creating hex file...
+".\Objects\tinyOS.axf" - 0 Error(s), 0 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.4.2.0.pack
+                ARM::CMSIS:CORE:3.40.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 3.40.0
+   * Component: Startup Version: 1.0.1
+
+<h2>Collection of Component include folders:</h2>
+  C:\Users\Administrator\Desktop\learning_tinyOS\learning_tinyOS\lesson5_2事件等待与通知\RTE
+  E:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include
+  E:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\Device\ARM\ARMCM3\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:3.40.0
+      Source file:   CMSIS\UserCodeTemplates\ARM\ITM_Retarget.c
+
+   * Component: ARM::Device:Startup:1.0.1
+      Source file:   Device\ARM\ARMCM3\Source\ARM\startup_ARMCM3.s
+      Source file:   Device\ARM\ARMCM3\Source\system_ARMCM3.c
+      Include file:  Device\ARM\ARMCM3\Include\ARMCM3.h
+ARM\ARMCM3\Source\ARM\startup_ARMCM3.s
+      Source file:   Device\ARM\ARMCM3\Source\system_ARMCM3.c
+      Include file:  Device\ARM\ARMCM3\Include\ARMCM3.h
+Target not created.
+ "t_event" is undefined
+        t_event * wait_event;
+sourse\t_task.c: 0 warnings, 1 error
+"sourse\t_task.c" - 1 Error(s), 0 Warning(s).
+compiling t_task.c...
+sourse\t_task.h(55): error:  #20: identifier "t_event" is undefined
+        t_event * wait_event;
+sourse\t_task.c: 0 warnings, 1 error
+"sourse\t_task.c" - 1 Error(s), 0 Warning(s).
+compiling t_task.c...
+sourse\t_event.h(42): error:  #20: identifier "tTask" is undefined
+  void t_event_wait (t_event * event, tTask * task, void * msg, uint32_t state, uint32_t timeout);
+sourse\t_event.h(51): error:  #20: identifier "tTask" is undefined
+  void t_event_remove_task (tTask * task, void * msg, uint32_t result);
+sourse\t_event.h(62): error:  #20: identifier "tTask" is undefined
+  tTask * t_event_wake_up (t_event * event, void * msg, uint32_t result);
+sourse\t_task.c(34): error:  #20: identifier "t_error_no_error" is undefined
+        task->wait_event_resalt  = t_error_no_error;
+sourse\t_task.c(59): warning:  #223-D: function "t_task_enter_critical" declared implicitly
+        uint32_t status = t_task_enter_critical();
+sourse\t_task.c(70): error:  #20: identifier "currentTask" is undefined
+                        if(task == currentTask)
+sourse\t_task.c(72): warning:  #223-D: function "t_task_sched" declared implicitly
+                                t_task_sched();
+sourse\t_task.c(79): warning:  #223-D: function "t_task_exit_critical" declared implicitly
+        t_task_exit_critical(status);
+sourse\t_task.c(85): warning:  #223-D: function "t_task_enter_critical" declared implicitly
+        uint32_t status = t_task_enter_critical();
+sourse\t_task.c(97): warning:  #223-D: function "t_task_sched" declared implicitly
+                        t_task_sched();
+sourse\t_task.c(103): warning:  #223-D: function "t_task_exit_critical" declared implicitly
+        t_task_exit_critical(status);
+sourse\t_task.c(129): warning:  #223-D: function "t_task_enter_critical" declared implicitly
+        uint32_t status = t_task_enter_critical();
+sourse\t_task.c(133): warning:  #223-D: function "t_time_task_remove" declared implicitly
+                t_time_task_remove(task);
+sourse\t_task.c(138): warning:  #223-D: function "t_task_sched_remove" declared implicitly
+                t_task_sched_remove(task);
+sourse\t_task.c(148): error:  #20: identifier "currentTask" is undefined
+        if(task == currentTask)
+sourse\t_task.c(150): warning:  #223-D: function "t_task_sched" declared implicitly
+                t_task_sched();
+sourse\t_task.c(154): warning:  #223-D: function "t_task_exit_critical" declared implicitly
+        t_task_exit_critical(status);
+sourse\t_task.c(166): warning:  #223-D: function "t_task_enter_critical" declared implicitly
+        uint32_t status = t_task_enter_critical();
+sourse\t_task.c(170): warning:  #223-D: function "t_task_exit_critical" declared implicitly
+        t_task_exit_critical(status);
+sourse\t_task.c(181): warning:  #223-D: function "t_task_enter_critical" declared implicitly
+        uint32_t status = t_task_enter_critical();
+sourse\t_task.c(183): error:  #20: identifier "currentTask" is undefined
+        delet = currentTask->task_request_delete_flag;
+sourse\t_task.c(184): warning:  #223-D: function "t_task_exit_critical" declared implicitly
+        t_task_exit_critical(status);
+sourse\t_task.c(196): warning:  #223-D: function "t_task_enter_critical" declared implicitly
+        uint32_t status = t_task_enter_critical();
+sourse\t_task.c(198): warning:  #223-D: function "t_task_sched_remove" declared implicitly
+        t_task_sched_remove(currentTask);
+sourse\t_task.c(198): error:  #20: identifier "currentTask" is undefined
+        t_task_sched_remove(currentTask);
+sourse\t_task.c(207): warning:  #223-D: function "t_task_sched" declared implicitly
+        t_task_sched();
+sourse\t_task.c(209): warning:  #223-D: function "t_task_exit_critical" declared implicitly
+        t_task_exit_critical(status);
+sourse\t_task.c(217): warning:  #223-D: function "t_task_enter_critical" declared implicitly
+        uint32_t status = t_task_enter_critical();
+sourse\t_task.c(223): warning:  #223-D: function "t_task_exit_critical" declared implicitly
+        t_task_exit_critical(status);
+sourse\t_task.c: 21 warnings, 8 errors
+"sourse\t_task.c" - 8 Error(s), 21 Warning(s).
+compiling t_task.c...
+sourse\t_event.h(40): error:  #20: identifier "tTask" is undefined
+  void t_event_wait (t_event * event, tTask * task, void * msg, uint32_t state, uint32_t timeout);
+sourse\t_event.h(49): error:  #20: identifier "tTask" is undefined
+  void t_event_remove_task (tTask * task, void * msg, uint32_t result);
+sourse\t_event.h(60): error:  #20: identifier "tTask" is undefined
+  tTask * t_event_wake_up (t_event * event, void * msg, uint32_t result);
+sourse\t_task.c: 0 warnings, 3 errors
+"sourse\t_task.c" - 3 Error(s), 0 Warning(s).
+compiling t_task.c...
+sourse\t_task.h(53): error:  #20: identifier "t_event" is undefined
+        t_event * wait_event;
+sourse\t_task.c: 0 warnings, 1 error
+"sourse\t_task.c" - 1 Error(s), 0 Warning(s).
+compiling t_task.c...
+sourse\t_task.h(53): error:  #20: identifier "t_event" is undefined
+        t_event * wait_event;
+sourse\t_task.c: 0 warnings, 1 error
+"sourse\t_task.c" - 1 Error(s), 0 Warning(s).
+compiling t_task.c...
+sourse\t_task.h(53): error:  #20: identifier "t_event" is undefined
+        t_event * wait_event;
+sourse\t_task.c: 0 warnings, 1 error
+"sourse\t_task.c" - 1 Error(s), 0 Warning(s).
+compiling t_task.c...
+sourse\t_task.h(53): error:  #20: identifier "t_event" is undefined
+        t_event * wait_event;
+sourse\t_task.c: 0 warnings, 1 error
+"sourse\t_task.c" - 1 Error(s), 0 Warning(s).
+compiling t_task.c...
+sourse\t_task.h(53): error:  #20: identifier "t_event" is undefined
+        t_event * wait_event;
+sourse\t_task.c: 0 warnings, 1 error
+"sourse\t_task.c" - 1 Error(s), 0 Warning(s).
+compiling t_task.c...
+sourse\t_task.h(53): error:  #20: identifier "t_event" is undefined
+        t_event * wait_event;
+sourse\t_task.c: 0 warnings, 1 error
+"sourse\t_task.c" - 1 Error(s), 0 Warning(s).
+compiling t_task.c...
+sourse\t_task.h(53): error:  #20: identifier "t_event" is undefined
+        t_event * wait_event;
+sourse\t_task.c: 0 warnings, 1 error
+"sourse\t_task.c" - 1 Error(s), 0 Warning(s).
+compiling t_task.c...
+sourse\t_task.h(53): error:  #20: identifier "t_event" is undefined
+        t_event * wait_event;
+sourse\t_task.c: 0 warnings, 1 error
+"sourse\t_task.c" - 1 Error(s), 0 Warning(s).
+compiling t_task.c...
+sourse\t_task.h(53): error:  #20: identifier "t_event" is undefined
+        t_event * wait_event;
+sourse\t_task.c: 0 warnings, 1 error
+"sourse\t_task.c" - 1 Error(s), 0 Warning(s).
+compiling t_task.c...
+sourse\t_task.h(53): error:  #20: identifier "t_event" is undefined
+        t_event * wait_event;
+sourse\t_task.c: 0 warnings, 1 error
+"sourse\t_task.c" - 1 Error(s), 0 Warning(s).
+compiling t_task.c...
+sourse\t_task.h(53): error:  #20: identifier "t_event" is undefined
+        t_event * wait_event;
+sourse\t_task.c: 0 warnings, 1 error
+"sourse\t_task.c" - 1 Error(s), 0 Warning(s).
+compiling t_task.c...
+sourse\t_task.h(53): error:  #20: identifier "t_event" is undefined
+        t_event * wait_event;
+sourse\t_task.c: 0 warnings, 1 error
+"sourse\t_task.c" - 1 Error(s), 0 Warning(s).
+compiling t_task.c...
+sourse\t_task.h(53): error:  #20: identifier "t_event" is undefined
+        t_event * wait_event;
+sourse\t_task.c: 0 warnings, 1 error
+"sourse\t_task.c" - 1 Error(s), 0 Warning(s).
+compiling t_task.c...
+"sourse\t_task.c" - 0 Error(s), 0 Warning(s).
