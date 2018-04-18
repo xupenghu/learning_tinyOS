@@ -21,31 +21,22 @@ Target DLL:      UL2CM3.DLL V1.153.0.0
 Dialog DLL:      TCM.DLL V1.14.2.0
  
 <h2>Project:</h2>
-C:\Users\Administrator\Desktop\learning_tinyOS\learning_tinyOS\lesson6_2计数信号量的获取与释放\tinyOS.uvprojx
-Project File Date:  04/17/2018
+C:\Users\Administrator\Desktop\tinyOS\tinyOS.uvproj
+Project File Date:  04/12/2018
 
 <h2>Output:</h2>
-*** Note: Rebuilding project, since 'Options->Output->Create Batch File' is selected.
-Rebuild target 'Target 1'
+Build target 'Target 1'
 compiling main.c...
-compiling switch.c...
-compiling bitmap.c...
-compiling list.c...
-compiling t_cpu.c...
-compiling t_task.c...
-compiling t_time.c...
-compiling app.c...
-compiling t_event.c...
-compiling t_sem.c...
-sourse\t_sem.c(55): warning:  #111-D: statement is unreachable
-        t_task_exit_critical(status);
-sourse\t_sem.c: 1 warning, 0 errors
+sourse\main.c(20): warning:  #111-D: statement is unreachable
+        return 0;
+sourse\main.c(12): warning:  #550-D: variable "flag" was set but never used
+        int flag;
+sourse\main.c: 2 warnings, 0 errors
 assembling startup_ARMCM3.s...
 compiling system_ARMCM3.c...
 linking...
-Program Size: Code=3070 RO-data=482 RW-data=40 ZI-data=25472  
-FromELF: creating hex file...
-".\Objects\tinyOS.axf" - 0 Error(s), 1 Warning(s).
+Program Size: Code=392 RO-data=224 RW-data=4 ZI-data=4196  
+".\Objects\tinyOS.axf" - 0 Error(s), 2 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -57,7 +48,7 @@ Package Vendor: ARM
    * Component: Startup Version: 1.0.1
 
 <h2>Collection of Component include folders:</h2>
-  C:\Users\Administrator\Desktop\learning_tinyOS\learning_tinyOS\lesson6_2计数信号量的获取与释放\RTE
+  C:\Users\Administrator\Desktop\tinyOS\RTE
   E:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include
   E:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\Device\ARM\ARMCM3\Include
 
@@ -67,10 +58,9 @@ Package Vendor: ARM
       Source file:   CMSIS\UserCodeTemplates\ARM\ITM_Retarget.c
 
    * Component: ARM::Device:Startup:1.0.1
-      Include file:  Device\ARM\ARMCM3\Include\ARMCM3.h
-      Source file:   Device\ARM\ARMCM3\Source\ARM\startup_ARMCM3.s
       Source file:   Device\ARM\ARMCM3\Source\system_ARMCM3.c
-</pre>
-</body>
-</html>
-e\app.c" - 0 Error(s), 0 Warning(s).
+      Source file:   Device\ARM\ARMCM3\Source\ARM\startup_ARMCM3.s
+      Include file:  Device\ARM\ARMCM3\Include\ARMCM3.h
+Load "C:\\Users\\Administrator\\Desktop\\tinyOS\\Objects\\tinyOS.axf" 
+Internal DLL Error
+Error: Flash Download failed  -  Target DLL has been cancelled
