@@ -12,16 +12,10 @@ tTastStack task2Env[1024];
 tTastStack task3Env[1024];
 tTastStack task4Env[1024];
 
-//定义两个等待队列
-t_event event_wait_timeout;
-t_event event_wait_normal;
 
+t_mem_block mem_block;
 
-t_mbox mbox2;
-t_mbox_info mbox_info;
-void * msgbuffer2[20];
-
-uint32_t msg[20];
+uint8_t mem1[20][100];
 
 int task1flag;
 
@@ -30,7 +24,8 @@ int task1flag;
 void task1Entry (void *param)
 {
 	tSetSysTickPeriod(10);
-
+	t_mem_block_init(&mem_block, (uint8_t *)mem1, 100, 20);
+	
 	for(;;)
 	{
 
@@ -47,21 +42,9 @@ void task1Entry (void *param)
 int task2flag;
 void task2Entry (void *param)
 {
-	int i;
-	t_mbox_init(&mbox2, 20, msgbuffer2);
-	
+
 	for(;;)
 	{
-		for(i = 0; i < 20; i ++)
-		{
-			msg[i] = i;
-			t_mbox_notify(&mbox2, &msg[i] , tMBOXSendFront);
-			t_mbox_get_info(&mbox2, &mbox_info);
-			
-		}
-
-		tTaskDelay(100);
-		
 		task2flag = 0;
 		tTaskDelay(1);
 		task2flag = 1;

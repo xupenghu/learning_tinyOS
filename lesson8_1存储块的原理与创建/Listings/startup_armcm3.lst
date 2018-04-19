@@ -421,10 +421,10 @@ ARM Macro Assembler    Page 7
               00000000 
 Command Line: --debug --xref --cpu=Cortex-M3 --apcs=interwork --depend=.\object
 s\startup_armcm3.d -o.\objects\startup_armcm3.o -IC:\Users\Administrator\Deskto
-p\learning_tinyOS\learning_tinyOS\lesson7_4邮箱状态查询\RTE -IE:\Keil_v5\ARM\PA
-CK\ARM\CMSIS\4.2.0\CMSIS\Include -IE:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\Device\A
-RM\ARMCM3\Include --predefine="_RTE_ SETA 1" --predefine="ARMCM3 SETA 1" --list
-=.\listings\startup_armcm3.lst RTE\Device\ARMCM3\startup_ARMCM3.s
+p\learning_tinyOS\learning_tinyOS\lesson8_1存储块的原理与创建\RTE -IE:\Keil_v5\
+ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include -IE:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\De
+vice\ARM\ARMCM3\Include --predefine="_RTE_ SETA 1" --predefine="ARMCM3 SETA 1" 
+--list=.\listings\startup_armcm3.lst RTE\Device\ARMCM3\startup_ARMCM3.s
 
 
 

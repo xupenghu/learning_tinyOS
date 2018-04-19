@@ -1,5 +1,5 @@
 --cpu Cortex-M3 --li -g --apcs=interwork 
--I C:\Users\Administrator\Desktop\learning_tinyOS\learning_tinyOS\lesson7_4邮箱状态查询\RTE
+-I C:\Users\Administrator\Desktop\learning_tinyOS\learning_tinyOS\lesson8_1存储块的原理与创建\RTE
 -I E:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include
 -I E:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\Device\ARM\ARMCM3\Include
 --pd "_RTE_ SETA 1" --pd "ARMCM3 SETA 1"
