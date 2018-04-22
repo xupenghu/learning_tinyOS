@@ -1,0 +1,6 @@
+-c --cpu Cortex-M3 --li -g -O0 --apcs=interwork -I.\sourse
+-I C:\Users\Administrator\Desktop\learning_tinyOS\learning_tinyOS\lesson11_2软定时器的启动与停止\RTE
+-I E:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include
+-I E:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\Device\ARM\ARMCM3\Include
+-D_RTE_ -DARMCM3
+-o .\objects\t_cpu.o --omf_browse .\objects\t_cpu.crf --depend .\objects\t_cpu.d "sourse\t_cpu.c"
