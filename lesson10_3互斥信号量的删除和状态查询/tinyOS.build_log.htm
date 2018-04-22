@@ -21,56 +21,46 @@ Target DLL:      UL2CM3.DLL V1.153.0.0
 Dialog DLL:      TCM.DLL V1.14.2.0
  
 <h2>Project:</h2>
-C:\Users\Administrator\Desktop\learning_tinyOS\learning_tinyOS\lesson10_2互斥信号量的等待与通知\tinyOS.uvprojx
-Project File Date:  04/22/2018
+C:\Users\Administrator\Desktop\tinyOS\tinyOS.uvproj
+Project File Date:  04/12/2018
 
 <h2>Output:</h2>
-*** Note: Rebuilding project, since 'Options->Output->Create Batch File' is selected.
-Rebuild target 'Target 1'
+Build target 'Target 1'
 compiling main.c...
-compiling switch.c...
-compiling bitmap.c...
-compiling list.c...
-compiling t_cpu.c...
-compiling t_task.c...
-compiling t_time.c...
-compiling app.c...
-compiling t_event.c...
-compiling t_sem.c...
-compiling t_mbox.c...
-compiling t_mem_block.c...
-compiling t_flag_group.c...
-compiling t_mutex.c...
+sourse\main.c(20): warning:  #111-D: statement is unreachable
+        return 0;
+sourse\main.c(12): warning:  #550-D: variable "flag" was set but never used
+        int flag;
+sourse\main.c: 2 warnings, 0 errors
 assembling startup_ARMCM3.s...
 compiling system_ARMCM3.c...
 linking...
-Program Size: Code=3322 RO-data=482 RW-data=40 ZI-data=25456  
-FromELF: creating hex file...
-".\Objects\tinyOS.axf" - 0 Error(s), 0 Warning(s).
+Program Size: Code=392 RO-data=224 RW-data=4 ZI-data=4196  
+".\Objects\tinyOS.axf" - 0 Error(s), 2 Warning(s).
 
 <h2>Software Packages used:</h2>
 
 Package Vendor: ARM
                 http://www.keil.com/pack/ARM.CMSIS.4.2.0.pack
-                ARM::Device:Startup:1.0.1
+                ARM::CMSIS:CORE:3.40.0
                 CMSIS (Cortex Microcontroller Software Interface Standard)
-   * Component: Startup Version: 1.0.1
    * Component: CORE Version: 3.40.0
+   * Component: Startup Version: 1.0.1
 
 <h2>Collection of Component include folders:</h2>
-  C:\Users\Administrator\Desktop\learning_tinyOS\learning_tinyOS\lesson10_2互斥信号量的等待与通知\RTE
+  C:\Users\Administrator\Desktop\tinyOS\RTE
   E:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include
   E:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\Device\ARM\ARMCM3\Include
 
 <h2>Collection of Component Files used:</h2>
 
+   * Component: ARM::CMSIS:CORE:3.40.0
+      Source file:   CMSIS\UserCodeTemplates\ARM\ITM_Retarget.c
+
    * Component: ARM::Device:Startup:1.0.1
       Source file:   Device\ARM\ARMCM3\Source\system_ARMCM3.c
       Source file:   Device\ARM\ARMCM3\Source\ARM\startup_ARMCM3.s
       Include file:  Device\ARM\ARMCM3\Include\ARMCM3.h
-
-   * Component: ARM::CMSIS:CORE:3.40.0
-      Source file:   CMSIS\UserCodeTemplates\ARM\ITM_Retarget.c
-</pre>
-</body>
-</html>
+Load "C:\\Users\\Administrator\\Desktop\\tinyOS\\Objects\\tinyOS.axf" 
+Internal DLL Error
+Error: Flash Download failed  -  Target DLL has been cancelled
