@@ -99,7 +99,7 @@ void t_timer_module_tick_notify (void);
 ** parameters           :   无
 ** Returned value       :   无
 ***********************************************************************************************************/
-void timer_module_init();
+void timer_module_init(void);
 
 
 #endif

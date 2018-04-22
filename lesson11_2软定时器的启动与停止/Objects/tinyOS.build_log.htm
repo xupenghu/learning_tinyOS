@@ -1,0 +1,132 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.12.0.0
+Copyright (C) 2014 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: 12 Administrator, 1, LIC=IC9MM-XJIK2-767QT-RESFN-JJCCN-2W6AU
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.12.0.0
+Toolchain Path:  E:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.05 (build 41)
+Assembler:       Armasm.exe V5.05 (build 41)
+Linker/Locator:  ArmLink.exe V5.05 (build 41)
+Library Manager: ArmAr.exe V5.05 (build 41)
+Hex Converter:   FromElf.exe V5.05 (build 41)
+CPU DLL:         SARMCM3.DLL V5.12.0.0
+Dialog DLL:      DCM.DLL V1.13.0.0
+Target DLL:      UL2CM3.DLL V1.153.0.0
+Dialog DLL:      TCM.DLL V1.14.2.0
+ 
+<h2>Project:</h2>
+C:\Users\Administrator\Desktop\learning_tinyOS\learning_tinyOS\lesson11_2软定时器的启动与停止\tinyOS.uvprojx
+Project File Date:  04/22/2018
+
+<h2>Output:</h2>
+*** Note: Rebuilding project, since 'Options->Output->Create Batch File' is selected.
+Rebuild target 'Target 1'
+compiling main.c...
+compiling switch.c...
+compiling bitmap.c...
+compiling list.c...
+compiling t_cpu.c...
+compiling t_task.c...
+compiling t_time.c...
+compiling app.c...
+compiling t_event.c...
+compiling t_sem.c...
+compiling t_mbox.c...
+compiling t_mem_block.c...
+compiling t_flag_group.c...
+compiling t_mutex.c...
+compiling t_timer.c...
+assembling startup_ARMCM3.s...
+compiling system_ARMCM3.c...
+linking...
+Program Size: Code=3642 RO-data=482 RW-data=52 ZI-data=29780  
+FromELF: creating hex file...
+".\Objects\tinyOS.axf" - 0 Error(s), 0 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.4.2.0.pack
+                ARM::CMSIS:CORE:3.40.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 3.40.0
+   * Component: Startup Version: 1.0.1
+
+<h2>Collection of Component include folders:</h2>
+  C:\Users\Administrator\Desktop\learning_tinyOS\learning_tinyOS\lesson11_2软定时器的启动与停止\RTE
+  E:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include
+  E:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\Device\ARM\ARMCM3\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:3.40.0
+      Source file:   CMSIS\UserCodeTemplates\ARM\ITM_Retarget.c
+
+   * Component: ARM::Device:Startup:1.0.1
+      Include file:  Device\ARM\ARMCM3\Include\ARMCM3.h
+      Source file:   Device\ARM\ARMCM3\Source\ARM\startup_ARMCM3.s
+      Source file:   Device\ARM\ARMCM3\Source\system_ARMCM3.c
+MCM3\Include\ARMCM3.h
+      Source file:   Device\ARM\ARMCM3\Source\ARM\startup_ARMCM3.s
+      Source file:   Device\ARM\ARMCM3\Source\system_ARMCM3.c
+compiling t_timer.c...
+sourse\t_timer.c(231): error:  #167: argument of type "tTastStack (*)[1024]" is incompatible with parameter of type "tTastStack *"
+        tTaskInit(&timer_task, t_timer_soft_task, (void *)0, TINYOS_TIMERTASK_PRIO, &tiemr_task_stack);
+sourse\t_timer.c: 0 warnings, 1 error
+"sourse\t_timer.c" - 1 Error(s), 0 Warning(s).
+eater then (TINYOS_PRO_COUNT - 1)"
+      #error "The proprity of timer task must be greater then (TINYOS_PRO_COUNT - 1)"
+sourse\t_timer.c: 0 warnings, 1 error
+"sourse\t_timer.c" - 1 Error(s), 0 Warning(s).
+compiling t_timer.c...
+sourse\t_timer.c(218): error:  #35: #error directive: "The proprity of timer task must be greater then (TINYOS_PRO_COUNT - 1)"
+      #error "The proprity of timer task must be greater then (TINYOS_PRO_COUNT - 1)"
+sourse\t_timer.c: 0 warnings, 1 error
+"sourse\t_timer.c" - 1 Error(s), 0 Warning(s).
+compiling t_timer.c...
+sourse\t_timer.c(219): error:  #35: #error directive: "The proprity of timer task must be greater then (TINYOS_PRO_COUNT - 1)"
+      #error "The proprity of timer task must be greater then (TINYOS_PRO_COUNT - 1)"
+sourse\t_timer.c: 0 warnings, 1 error
+"sourse\t_timer.c" - 1 Error(s), 0 Warning(s).
+compiling t_timer.c...
+sourse\t_timer.c(219): error:  #35: #error directive: "The proprity of timer task must be greater then (TINYOS_PRO_COUNT - 1)"
+      #error "The proprity of timer task must be greater then (TINYOS_PRO_COUNT - 1)"
+sourse\t_timer.c: 0 warnings, 1 error
+"sourse\t_timer.c" - 1 Error(s), 0 Warning(s).
+compiling t_timer.c...
+"sourse\t_timer.c" - 0 Error(s), 0 Warning(s).
+compiling t_timer.c...
+"sourse\t_timer.c" - 0 Error(s), 0 Warning(s).
+compiling t_timer.c...
+"sourse\t_timer.c" - 0 Error(s), 0 Warning(s).
+compiling t_timer.c...
+"sourse\t_timer.c" - 0 Error(s), 0 Warning(s).
+compiling t_timer.c...
+"sourse\t_timer.c" - 0 Error(s), 0 Warning(s).
+compiling main.c...
+sourse\main.c(282): warning:  #223-D: function "timer_module_init" declared implicitly
+        timer_module_init();
+sourse\main.c: 1 warning, 0 errors
+"sourse\main.c" - 0 Error(s), 1 Warning(s).
+compiling main.c...
+sourse\main.c(282): warning:  #223-D: function "timer_module_init" declared implicitly
+        timer_module_init();
+sourse\main.c: 1 warning, 0 errors
+"sourse\main.c" - 0 Error(s), 1 Warning(s).
+compiling main.c...
+sourse\t_timer.h(102): warning:  #1295-D: Deprecated declaration timer_module_init - give arg types
+  void timer_module_init();
+sourse\main.c: 1 warning, 0 errors
+"sourse\main.c" - 0 Error(s), 1 Warning(s).
+compiling main.c...
+"sourse\main.c" - 0 Error(s), 0 Warning(s).
+compiling app.c...
+"sourse\app.c" - 0 Error(s), 0 Warning(s).
+compiling app.c...
+"sourse\app.c" - 0 Error(s), 0 Warning(s).
