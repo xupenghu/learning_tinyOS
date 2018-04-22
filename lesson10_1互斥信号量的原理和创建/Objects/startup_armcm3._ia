@@ -1,0 +1,6 @@
+--cpu Cortex-M3 --li -g --apcs=interwork 
+-I C:\Users\Administrator\Desktop\learning_tinyOS\learning_tinyOS\lesson10_1互斥信号量的原理和创建\RTE
+-I E:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include
+-I E:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\Device\ARM\ARMCM3\Include
+--pd "_RTE_ SETA 1" --pd "ARMCM3 SETA 1"
+--list .\listings\startup_armcm3.lst --xref -o .\objects\startup_armcm3.o --depend .\objects\startup_armcm3.d "RTE\Device\ARMCM3\startup_ARMCM3.s"
