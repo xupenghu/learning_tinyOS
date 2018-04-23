@@ -1,0 +1,17 @@
+#ifndef __CONFIG__H
+#define __CONFIG__H
+
+#define TINYOS_PRIO_COUNT 	32
+#define TINYOS_SLICE_MAX	32
+
+#define TINYOS_IDELTASK_STACK_SIZE	1024
+
+#define TINYOS_TIMERTASK_STATCK_SIZE 1024
+#define TINYOS_TIMERTASK_PRIO					2
+
+#define TINYOS_SYSTICK_MS							10
+
+#define TICKS_PER_SEC								(1000/TINYOS_SYSTICK_MS)
+
+#endif
+
